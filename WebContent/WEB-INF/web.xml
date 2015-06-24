@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet id="1">
+    <servlet-name>timeservlet</servlet-name>
+    <servlet-class>com.quest.servlets.encuesta</servlet-class>
+  </servlet>
+    <servlet-mapping>
+    <servlet-name>timeservlet</servlet-name>
+    <url-pattern>*.encuesta</url-pattern>
+  </servlet-mapping>
+  <servlet id="2">
+    <servlet-name>welcome</servlet-name>
+    <servlet-class>com.quest.servlets.welcome</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>welcome</servlet-name>
+    <url-pattern>inicio</url-pattern>
+  </servlet-mapping>
+</web-app>
